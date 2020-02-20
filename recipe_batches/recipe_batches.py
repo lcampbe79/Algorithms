@@ -7,6 +7,7 @@ def recipe_batches(recipe, ingredients):
     if key not in ingredients or len(recipe) > len(ingredients):
       return 0
     else:
+      #list of 0's
       batches = [0] * len(recipe)
       index = 0
       # Get the number of batches per ingredient

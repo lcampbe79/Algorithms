@@ -5,6 +5,7 @@ import argparse
 def find_max_profit(prices):
   max_profit = prices[1] - prices[0]
   current_min = prices[0]
+  #1 is the start
   for price in prices[1:]:
     if price < current_min:
       current_min = price
